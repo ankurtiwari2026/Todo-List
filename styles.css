@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  "Comic Sans MS", cursive;
+}
+
+html{
+    color: wheat;
+    font-size: 63%;
+}
+
+body{
+    width: 100%;
+    height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    background-color: black;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: circle;
+    margin: 2rem 0 ;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+hr{
+    margin-bottom: 3.2rem;
+}
+
+button{
+    background-color: rgb(234, 234, 89);
+    padding: 0.6rem 2.4rem;
+    border-radius: 10rem;
+    margin-right: 3.6rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+}
+
+button:hover {
+    background-color: rgb(94, 94, 9);
+    color: black;
+}
+
+.btn{
+    line-height: 1.3;
+    background-color:  lightpink;
+    border-radius: 6rem;
+    line-height: 1.6;
+}
+
+.btn:hover{
+    background-color: palevioletred;
+}
+
+h1{
+    font-size: 3.6rem;
+    margin-top: 4.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputSection{
+    justify-content: center;
+    align-items: center;
+}
+
+.main_todo_div{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr !important;
+    align-items: center;
+    height: auto;
+}
+
+#inputValue{
+    border-radius: 7px;
+    font-size: 2rem;
+    width: auto;
+    margin: 20px;
+    padding: auto;
+}
+
+@media (max-width: 500px) {
+    #inputValue {
+        font-size: 1.5rem;
+        padding: auto;
+        margin: auto;
+        width: 35%;
+    }
+    button{
+        padding: auto;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    li{
+        font-size: 1.5rem;
+    }
+    .btn{
+        line-height: 1.3rem;
+        width: 25%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        display: flex;
+    }
+    .inputSection{
+        display: flex;
+    }
+
+    li{
+        margin-left: 4px;
+    }
+}
